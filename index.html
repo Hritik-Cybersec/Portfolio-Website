@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hritik Arya's Portfolio</title>
+
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+            }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+    
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a:hover{
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+        }
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
+
+        main hr{
+            border:0;
+            background: #9c97f1;
+            height:1.2px;
+            margin: 60px 84px;
+        }
+
+        .left{
+            font-size: 1.5rem;
+        }
+
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin:130px 0;
+        }
+
+        .firstSection > div{
+            width: 30%;
+        }
+
+        .leftSection .buttons{
+            padding:50px 0;
+        }
+
+        .leftSection{
+            font-size: 3rem;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;    
+        }
+
+        .RightSection img{
+            width:80%;
+        }
+        
+        .purple{
+            color:rgb(170, 107, 228);
+        }
+
+        .text-gray{
+            color:gray;
+        }   
+
+        #element{
+            color:rgb(170, 107, 228);
+        }
+
+        .SecondSection{
+            max-width:80vw;
+            margin:auto;
+            height: 80vh;
+        }
+
+        .SecondSection h1{
+            font-size: 1.9rem;
+        }
+        .SecondSection .box{
+            background: white;
+            width: 32vw;  
+            height: 2px;
+            margin: 2vw 4vw  ;
+            display: flex;
+        }
+
+        .SecondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 137px;
+        }
+
+        .image-top{
+            position: relative;
+            top: 13px;
+            left: 4px;
+            width: 74px;
+            }
+
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        footer{
+            background-color:#0e0e1a;
+        }
+
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .footer > div{
+            width: 223px;
+        }
+
+        footer .footer-rights{
+            text-align: center;
+            color:gray;
+            padding: 12px 0;
+        }
+
+        @media screen and (max-width: 1400px) {
+
+            .box{
+                flex-direction: column;
+            }
+
+            .SecondSection .vertical{
+                height: unset;
+            }
+
+            .vertical-title, .vertical-desc{
+                left: 45px;
+            }
+
+            .SecondSection .box{
+                width: 80vw;
+            }
+
+            nav{
+                flex-direction: column;
+            }
+
+            .firstSection{
+                flex-direction: column-reverse;
+            }
+
+            .leftSection{
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .RightSection{
+                width: 721px !important;
+                display: flex;
+                justify-content: center;
+            }
+
+            .RightSection img{
+                width: 45vw;
+                margin-bottom: 73px;
+            }
+
+            .image-top{
+                top: 109px;
+            }
+
+            .SecondSection{
+                max-width: 80vw;
+                margin: auto;
+                height: 141vh;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            body{
+                min-width: fit-content;
+            }
+
+        } 
+        
+
+    </style>
+
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="left">Hritik's Portfolio</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/">Services</a></li>
+                        <li><a href="/">Projects</a></li>
+                        <li><a href="/">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="firstSection">
+                <div class="leftSection">
+                    <div>Hi, My name is</div> <span class="purple">Hritik Arya</span>
+                    <div>and I am a passionate</div>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <button class="btn">Download Resume</button>
+                        <a href = 'https://github.com/Hritik-Cybersec/'></a>
+                        <button class="btn">
+                        Visit Github
+                    </button>
+                    </div>
+                </div>
+                <div class="RightSection">
+                    <img src="bg.png" alt srcset>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="SecondSection">
+                <span class="text-gray">What I have done so far</span>
+                <h1>Work Experience</h1>
+                <div class="box">
+                    <div class="vertical"> <!-- First Internship -->
+                        <img class="image-top" src="technohacks.png" alt>
+                        <div class="vertical-title">
+                            Cybersecurity<br>Intern<br>(Aug - Sept)
+                        </div>
+                        <div class="vertical-desc">
+                            Worked as Cyber Security Intern @ Technohacks for 1 Month
+                        </div>
+                    </div
+                    >
+                    <div class="vertical"> <!-- Second Internship -->
+                        <img class="image-top" src="Bharat Intern.png" alt>
+                        <div class="vertical-title">
+                            Web Developer<br>Intern<br>(Sept  - Oct)
+                        </div>
+                        <div class="vertical-desc">
+                            Worked as Web Developer Intern @ Technohacks for 1 Month
+                        </div>
+                    </div>
+
+                    <!-- <div class="vertical"> <!-- Third Internship 
+                        <img class="image-top" src="Insta.png".png" alt>
+                        <div class="vertical-title">
+                            HTML Developer (2015-2015)
+                        </div>
+                        <div class="vertical-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempora possimus illo aut eos cupiditate, iure
+                            rerum ipsa assumenda quam provident eum quod nostrum
+                            ad exercitationem cumque officia iusto rem qui!
+                        </div>
+                    </div>  -->
+                    <!-- <div class="vertical"> <!-- Fourth Internship 
+                        <img class="image-top" src="Facebook.png" alt>
+                        <div class="vertical-title">
+                            HTML Developer (2015-2016)
+                        </div>
+                        <div class="vertical-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempora possimus illo aut eos cupiditate, iure
+                            rerum ipsa assumenda quam provident eum quod nostrum
+                            ad exercitationem cumque officia iusto rem qui!
+                        </div>
+                    </div> -->
+                    <!-- <div class="vertical">  <!--Fifth Internship 
+                        <img class="image-top" src="Twitter.png" alt>
+                        <div class="vertical-title">
+                            HTML Developer (2016-2019)
+                        </div>
+                        <div class="vertical-desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Tempora possimus illo aut eos cupiditate, iure
+                            rerum ipsa assumenda quam provident eum quod nostrum
+                            ad exercitationem cumque officia iusto rem qui!
+                        </div>
+                    </div> -->
+                    <!-- <div class="vertical">  <!-- Sixth Internship 
+                        <img class="image-top" src="Youtube.png" alt>
+                        <div class="vertical-title">
+                            HTML Developer (2019-2020)
+                        </div>
+                        <div class="vertical-desc">
+                            Lorem ipsum dolor sit 
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer-first">
+                    <h3>Hritik's Portfolio</h3>
+                </div>
+            </div>
+            <div class="footer-rights">
+                Copyright &#169; | All Rights Reserved
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            
+        </script>
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('#element', {
+            strings: ['<i>Programmer</i>', '&amp;',' <i>Cybersecurity Specialist</i>'],
+            typeSpeed: 50,
+            
+        });
+        </script>
+    </body>
+</html>
